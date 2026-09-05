@@ -1,0 +1,459 @@
+{
+  "timestamp": "20260904_133423",
+  "release": "release_002",
+  "canonical_names": [
+    "Colonel Meera Shankar Singh",
+    "General Rajesh Kumar Verma"
+  ],
+  "canonical_dates": [
+    "10 March 2026",
+    "14 March 2026"
+  ],
+  "canonical_numbers": [
+    "180",
+    "12",
+    "5"
+  ],
+  "canonical_locations": [
+    "Nashik",
+    "Ahmednagar",
+    "Pune"
+  ],
+  "metrics": {
+    "total": 40,
+    "caught": 34,
+    "missed": 6,
+    "catch_rate": 85.0,
+    "true_positives": 34,
+    "false_positives": 0,
+    "false_negatives": 6,
+    "true_negatives": 0,
+    "precision": 100.0,
+    "recall": 85.0,
+    "f1": 91.89,
+    "by_category": {
+      "date": {
+        "caught": 10,
+        "total": 10,
+        "catch_rate": 100.0
+      },
+      "location": {
+        "caught": 10,
+        "total": 10,
+        "catch_rate": 100.0
+      },
+      "name": {
+        "caught": 4,
+        "total": 10,
+        "catch_rate": 40.0
+      },
+      "number": {
+        "caught": 10,
+        "total": 10,
+        "catch_rate": 100.0
+      }
+    }
+  },
+  "details": [
+    {
+      "ID": "SEED-NUM-001",
+      "Category": "number",
+      "Language Affected": "Hindi",
+      "Description": "Number '180' removed from Hindi",
+      "Expected Value": "180",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-002",
+      "Category": "number",
+      "Language Affected": "Hindi",
+      "Description": "Number '180' changed to '230' in Hindi",
+      "Expected Value": "180",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-003",
+      "Category": "number",
+      "Language Affected": "Hindi",
+      "Description": "Number '12' removed from Hindi",
+      "Expected Value": "12",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-004",
+      "Category": "number",
+      "Language Affected": "Hindi",
+      "Description": "Number '12' changed to '42' in Hindi",
+      "Expected Value": "12",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-005",
+      "Category": "number",
+      "Language Affected": "Marathi",
+      "Description": "Number '180' removed from Marathi",
+      "Expected Value": "180",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-006",
+      "Category": "number",
+      "Language Affected": "Marathi",
+      "Description": "Number '180' changed to '130' in Marathi",
+      "Expected Value": "180",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-007",
+      "Category": "number",
+      "Language Affected": "Marathi",
+      "Description": "Number '12' removed from Marathi",
+      "Expected Value": "12",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-008",
+      "Category": "number",
+      "Language Affected": "Marathi",
+      "Description": "Number '12' changed to '17' in Marathi",
+      "Expected Value": "12",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-009",
+      "Category": "number",
+      "Language Affected": "English",
+      "Description": "Number '180' changed to '280' in English",
+      "Expected Value": "180",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-010",
+      "Category": "number",
+      "Language Affected": "English",
+      "Description": "Number '12' removed from English",
+      "Expected Value": "12",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-001",
+      "Category": "date",
+      "Language Affected": "Hindi",
+      "Description": "Date removed from Hindi",
+      "Expected Value": "10 March 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-002",
+      "Category": "date",
+      "Language Affected": "Hindi",
+      "Description": "Day changed 10->11 in Hindi date",
+      "Expected Value": "10 March 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-003",
+      "Category": "date",
+      "Language Affected": "Hindi",
+      "Description": "Month changed March->April in Hindi date",
+      "Expected Value": "10 March 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-004",
+      "Category": "date",
+      "Language Affected": "Hindi",
+      "Description": "Year changed 2026->2027 in Hindi",
+      "Expected Value": "10 March 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-005",
+      "Category": "date",
+      "Language Affected": "Marathi",
+      "Description": "Date removed from Marathi",
+      "Expected Value": "10 March 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-006",
+      "Category": "date",
+      "Language Affected": "Marathi",
+      "Description": "Day changed 10->9 in Marathi date",
+      "Expected Value": "10 March 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-007",
+      "Category": "date",
+      "Language Affected": "Marathi",
+      "Description": "Month changed March->April in Marathi date",
+      "Expected Value": "10 March 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-008",
+      "Category": "date",
+      "Language Affected": "Marathi",
+      "Description": "Year changed 2026->2025 in Marathi",
+      "Expected Value": "10 March 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-009",
+      "Category": "date",
+      "Language Affected": "English",
+      "Description": "Day changed 10->15 in English date",
+      "Expected Value": "10 March 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-010",
+      "Category": "date",
+      "Language Affected": "English",
+      "Description": "Year changed 2026->2024 in English",
+      "Expected Value": "10 March 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NAME-001",
+      "Category": "name",
+      "Language Affected": "Hindi",
+      "Description": "Name removed from Hindi",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NAME-002",
+      "Category": "name",
+      "Language Affected": "Hindi",
+      "Description": "First name changed in Hindi",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-003",
+      "Category": "name",
+      "Language Affected": "Hindi",
+      "Description": "Last name changed in Hindi",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-004",
+      "Category": "name",
+      "Language Affected": "Hindi",
+      "Description": "Name replaced with different name in Hindi",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NAME-005",
+      "Category": "name",
+      "Language Affected": "Marathi",
+      "Description": "Name removed from Marathi",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NAME-006",
+      "Category": "name",
+      "Language Affected": "Marathi",
+      "Description": "First name changed in Marathi",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-007",
+      "Category": "name",
+      "Language Affected": "Marathi",
+      "Description": "Last name changed in Marathi",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-008",
+      "Category": "name",
+      "Language Affected": "Hindi",
+      "Description": "Honorific removed from Hindi name",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-009",
+      "Category": "name",
+      "Language Affected": "Marathi",
+      "Description": "Honorific removed from Marathi name",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-010",
+      "Category": "name",
+      "Language Affected": "Marathi",
+      "Description": "Name replaced with different name in Marathi",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-LOC-001",
+      "Category": "location",
+      "Language Affected": "Hindi",
+      "Description": "Location 'Nashik' removed from Hindi",
+      "Expected Value": "Nashik",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-LOC-002",
+      "Category": "location",
+      "Language Affected": "Hindi",
+      "Description": "Location 'Nashik' changed to 'Mumbai' in Hindi",
+      "Expected Value": "Nashik",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-LOC-003",
+      "Category": "location",
+      "Language Affected": "Hindi",
+      "Description": "Location 'Ahmednagar' removed from Hindi",
+      "Expected Value": "Ahmednagar",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-LOC-004",
+      "Category": "location",
+      "Language Affected": "Hindi",
+      "Description": "Location 'Ahmednagar' changed to 'Nagpur' in Hindi",
+      "Expected Value": "Ahmednagar",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-LOC-005",
+      "Category": "location",
+      "Language Affected": "Marathi",
+      "Description": "Location 'Nashik' removed from Marathi",
+      "Expected Value": "Nashik",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-LOC-006",
+      "Category": "location",
+      "Language Affected": "Marathi",
+      "Description": "Location 'Nashik' changed to 'Mumbai' in Marathi",
+      "Expected Value": "Nashik",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-LOC-007",
+      "Category": "location",
+      "Language Affected": "Marathi",
+      "Description": "Location 'Ahmednagar' removed from Marathi",
+      "Expected Value": "Ahmednagar",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-LOC-008",
+      "Category": "location",
+      "Language Affected": "Marathi",
+      "Description": "Location 'Ahmednagar' changed to 'Nagpur' in Marathi",
+      "Expected Value": "Ahmednagar",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-LOC-009",
+      "Category": "location",
+      "Language Affected": "English",
+      "Description": "Location 'Nashik' removed from English",
+      "Expected Value": "Nashik",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-LOC-010",
+      "Category": "location",
+      "Language Affected": "English",
+      "Description": "Location 'Ahmednagar' changed to 'Nagpur' in English",
+      "Expected Value": "Ahmednagar",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    }
+  ]
+}

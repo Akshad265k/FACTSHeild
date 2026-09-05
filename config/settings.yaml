@@ -1,0 +1,18 @@
+scoring:
+  base_score: 100
+  critical_penalty: -20
+  warning_penalty: -10
+  minor_penalty: -5
+
+matching:
+  name_strong_threshold: 0.88
+  name_probable_threshold: 0.75
+  name_review_threshold: 0.65
+
+languages:
+  - code: en
+    name: English
+  - code: hi
+    name: Hindi
+  - code: mr
+    name: Marathi

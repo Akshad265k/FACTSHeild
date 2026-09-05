@@ -1,0 +1,348 @@
+{
+  "timestamp": "20260904_133430",
+  "release": "release_004",
+  "canonical_names": [
+    "Colonel Meera Shankar Singh"
+  ],
+  "canonical_dates": [
+    "15 August 2026"
+  ],
+  "canonical_numbers": [
+    "75",
+    "7",
+    "300"
+  ],
+  "canonical_locations": [],
+  "metrics": {
+    "total": 30,
+    "caught": 24,
+    "missed": 6,
+    "catch_rate": 80.0,
+    "true_positives": 24,
+    "false_positives": 0,
+    "false_negatives": 6,
+    "true_negatives": 0,
+    "precision": 100.0,
+    "recall": 80.0,
+    "f1": 88.89,
+    "by_category": {
+      "date": {
+        "caught": 10,
+        "total": 10,
+        "catch_rate": 100.0
+      },
+      "name": {
+        "caught": 4,
+        "total": 10,
+        "catch_rate": 40.0
+      },
+      "number": {
+        "caught": 10,
+        "total": 10,
+        "catch_rate": 100.0
+      }
+    }
+  },
+  "details": [
+    {
+      "ID": "SEED-NUM-001",
+      "Category": "number",
+      "Language Affected": "Hindi",
+      "Description": "Number '75' removed from Hindi",
+      "Expected Value": "75",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-002",
+      "Category": "number",
+      "Language Affected": "Hindi",
+      "Description": "Number '75' changed to '125' in Hindi",
+      "Expected Value": "75",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-003",
+      "Category": "number",
+      "Language Affected": "Hindi",
+      "Description": "Number '7' removed from Hindi",
+      "Expected Value": "7",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-004",
+      "Category": "number",
+      "Language Affected": "Hindi",
+      "Description": "Number '7' changed to '37' in Hindi",
+      "Expected Value": "7",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-005",
+      "Category": "number",
+      "Language Affected": "Marathi",
+      "Description": "Number '75' removed from Marathi",
+      "Expected Value": "75",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-006",
+      "Category": "number",
+      "Language Affected": "Marathi",
+      "Description": "Number '75' changed to '25' in Marathi",
+      "Expected Value": "75",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-007",
+      "Category": "number",
+      "Language Affected": "Marathi",
+      "Description": "Number '7' removed from Marathi",
+      "Expected Value": "7",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-008",
+      "Category": "number",
+      "Language Affected": "Marathi",
+      "Description": "Number '7' changed to '12' in Marathi",
+      "Expected Value": "7",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-009",
+      "Category": "number",
+      "Language Affected": "English",
+      "Description": "Number '75' changed to '175' in English",
+      "Expected Value": "75",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-010",
+      "Category": "number",
+      "Language Affected": "English",
+      "Description": "Number '7' removed from English",
+      "Expected Value": "7",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-001",
+      "Category": "date",
+      "Language Affected": "Hindi",
+      "Description": "Date removed from Hindi",
+      "Expected Value": "15 August 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-002",
+      "Category": "date",
+      "Language Affected": "Hindi",
+      "Description": "Day changed 15->16 in Hindi date",
+      "Expected Value": "15 August 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-003",
+      "Category": "date",
+      "Language Affected": "Hindi",
+      "Description": "Month changed August->September in Hindi date",
+      "Expected Value": "15 August 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-004",
+      "Category": "date",
+      "Language Affected": "Hindi",
+      "Description": "Year changed 2026->2027 in Hindi",
+      "Expected Value": "15 August 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-005",
+      "Category": "date",
+      "Language Affected": "Marathi",
+      "Description": "Date removed from Marathi",
+      "Expected Value": "15 August 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-006",
+      "Category": "date",
+      "Language Affected": "Marathi",
+      "Description": "Day changed 15->14 in Marathi date",
+      "Expected Value": "15 August 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-007",
+      "Category": "date",
+      "Language Affected": "Marathi",
+      "Description": "Month changed August->September in Marathi date",
+      "Expected Value": "15 August 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-008",
+      "Category": "date",
+      "Language Affected": "Marathi",
+      "Description": "Year changed 2026->2025 in Marathi",
+      "Expected Value": "15 August 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-009",
+      "Category": "date",
+      "Language Affected": "English",
+      "Description": "Day changed 15->20 in English date",
+      "Expected Value": "15 August 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-010",
+      "Category": "date",
+      "Language Affected": "English",
+      "Description": "Year changed 2026->2024 in English",
+      "Expected Value": "15 August 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NAME-001",
+      "Category": "name",
+      "Language Affected": "Hindi",
+      "Description": "Name removed from Hindi",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NAME-002",
+      "Category": "name",
+      "Language Affected": "Hindi",
+      "Description": "First name changed in Hindi",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-003",
+      "Category": "name",
+      "Language Affected": "Hindi",
+      "Description": "Last name changed in Hindi",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-004",
+      "Category": "name",
+      "Language Affected": "Hindi",
+      "Description": "Name replaced with different name in Hindi",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NAME-005",
+      "Category": "name",
+      "Language Affected": "Marathi",
+      "Description": "Name removed from Marathi",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NAME-006",
+      "Category": "name",
+      "Language Affected": "Marathi",
+      "Description": "First name changed in Marathi",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-007",
+      "Category": "name",
+      "Language Affected": "Marathi",
+      "Description": "Last name changed in Marathi",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-008",
+      "Category": "name",
+      "Language Affected": "Hindi",
+      "Description": "Honorific removed from Hindi name",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-009",
+      "Category": "name",
+      "Language Affected": "Marathi",
+      "Description": "Honorific removed from Marathi name",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-010",
+      "Category": "name",
+      "Language Affected": "Marathi",
+      "Description": "Name replaced with different name in Marathi",
+      "Expected Value": "Colonel Meera Shankar Singh",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    }
+  ]
+}

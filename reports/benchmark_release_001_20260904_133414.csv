@@ -1,0 +1,41 @@
+ID,Category,Language Affected,Description,Expected Value,Expected Detection,Was Caught,Result
+SEED-NUM-001,number,Hindi,Number '250' removed from Hindi,250,True,True,PASS
+SEED-NUM-002,number,Hindi,Number '250' changed to '300' in Hindi,250,True,True,PASS
+SEED-NUM-003,number,Hindi,Number '120' removed from Hindi,120,True,True,PASS
+SEED-NUM-004,number,Hindi,Number '120' changed to '150' in Hindi,120,True,True,PASS
+SEED-NUM-005,number,Marathi,Number '250' removed from Marathi,250,True,True,PASS
+SEED-NUM-006,number,Marathi,Number '250' changed to '200' in Marathi,250,True,True,PASS
+SEED-NUM-007,number,Marathi,Number '120' removed from Marathi,120,True,True,PASS
+SEED-NUM-008,number,Marathi,Number '120' changed to '125' in Marathi,120,True,True,PASS
+SEED-NUM-009,number,English,Number '250' changed to '350' in English,250,True,True,PASS
+SEED-NUM-010,number,English,Number '120' removed from English,120,True,True,PASS
+SEED-DATE-001,date,Hindi,Date removed from Hindi,15 September 2026,True,True,PASS
+SEED-DATE-002,date,Hindi,Day changed 15->16 in Hindi date,15 September 2026,True,True,PASS
+SEED-DATE-003,date,Hindi,Month changed September->October in Hindi date,15 September 2026,True,True,PASS
+SEED-DATE-004,date,Hindi,Year changed 2026->2027 in Hindi,15 September 2026,True,True,PASS
+SEED-DATE-005,date,Marathi,Date removed from Marathi,15 September 2026,True,True,PASS
+SEED-DATE-006,date,Marathi,Day changed 15->14 in Marathi date,15 September 2026,True,True,PASS
+SEED-DATE-007,date,Marathi,Month changed September->October in Marathi date,15 September 2026,True,True,PASS
+SEED-DATE-008,date,Marathi,Year changed 2026->2025 in Marathi,15 September 2026,True,True,PASS
+SEED-DATE-009,date,English,Day changed 15->20 in English date,15 September 2026,True,True,PASS
+SEED-DATE-010,date,English,Year changed 2026->2024 in English,15 September 2026,True,True,PASS
+SEED-NAME-001,name,Hindi,Name removed from Hindi,Brigadier Aditya Kumar Nair,True,True,PASS
+SEED-NAME-002,name,Hindi,First name changed in Hindi,Brigadier Aditya Kumar Nair,True,True,PASS
+SEED-NAME-003,name,Hindi,Last name changed in Hindi,Brigadier Aditya Kumar Nair,True,True,PASS
+SEED-NAME-004,name,Hindi,Name replaced with different name in Hindi,Brigadier Aditya Kumar Nair,True,True,PASS
+SEED-NAME-005,name,Marathi,Name removed from Marathi,Brigadier Aditya Kumar Nair,True,True,PASS
+SEED-NAME-006,name,Marathi,First name changed in Marathi,Brigadier Aditya Kumar Nair,True,True,PASS
+SEED-NAME-007,name,Marathi,Last name changed in Marathi,Brigadier Aditya Kumar Nair,True,True,PASS
+SEED-NAME-008,name,Hindi,Honorific removed from Hindi name,Brigadier Aditya Kumar Nair,True,False,FAIL
+SEED-NAME-009,name,Marathi,Honorific removed from Marathi name,Brigadier Aditya Kumar Nair,True,False,FAIL
+SEED-NAME-010,name,Marathi,Name replaced with different name in Marathi,Brigadier Aditya Kumar Nair,True,True,PASS
+SEED-LOC-001,location,Hindi,Location 'Pune' removed from Hindi,Pune,True,True,PASS
+SEED-LOC-002,location,Hindi,Location 'Pune' changed to 'Mumbai' in Hindi,Pune,True,True,PASS
+SEED-LOC-003,location,Hindi,Location 'Satara' removed from Hindi,Satara,True,True,PASS
+SEED-LOC-004,location,Hindi,Location 'Satara' changed to 'Nagpur' in Hindi,Satara,True,True,PASS
+SEED-LOC-005,location,Marathi,Location 'Pune' removed from Marathi,Pune,True,True,PASS
+SEED-LOC-006,location,Marathi,Location 'Pune' changed to 'Mumbai' in Marathi,Pune,True,True,PASS
+SEED-LOC-007,location,Marathi,Location 'Satara' removed from Marathi,Satara,True,True,PASS
+SEED-LOC-008,location,Marathi,Location 'Satara' changed to 'Nagpur' in Marathi,Satara,True,True,PASS
+SEED-LOC-009,location,English,Location 'Pune' removed from English,Pune,True,True,PASS
+SEED-LOC-010,location,English,Location 'Satara' changed to 'Nagpur' in English,Satara,True,True,PASS

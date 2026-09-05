@@ -1,0 +1,351 @@
+{
+  "timestamp": "20260903_003155",
+  "release": "release_005",
+  "canonical_names": [
+    "Lieutenant General Arjun Suresh Rao"
+  ],
+  "canonical_dates": [
+    "26 November 2026"
+  ],
+  "canonical_numbers": [
+    "200",
+    "4",
+    "8",
+    "12",
+    "2",
+    "15"
+  ],
+  "canonical_locations": [],
+  "metrics": {
+    "total": 30,
+    "caught": 19,
+    "missed": 11,
+    "catch_rate": 63.33,
+    "true_positives": 19,
+    "false_positives": 0,
+    "false_negatives": 11,
+    "true_negatives": 0,
+    "precision": 100.0,
+    "recall": 63.33,
+    "f1": 77.55,
+    "by_category": {
+      "date": {
+        "caught": 5,
+        "total": 10,
+        "catch_rate": 50.0
+      },
+      "name": {
+        "caught": 4,
+        "total": 10,
+        "catch_rate": 40.0
+      },
+      "number": {
+        "caught": 10,
+        "total": 10,
+        "catch_rate": 100.0
+      }
+    }
+  },
+  "details": [
+    {
+      "ID": "SEED-NUM-001",
+      "Category": "number",
+      "Language Affected": "Hindi",
+      "Description": "Number '200' removed from Hindi",
+      "Expected Value": "200",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-002",
+      "Category": "number",
+      "Language Affected": "Hindi",
+      "Description": "Number '200' changed to '250' in Hindi",
+      "Expected Value": "200",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-003",
+      "Category": "number",
+      "Language Affected": "Hindi",
+      "Description": "Number '4' removed from Hindi",
+      "Expected Value": "4",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-004",
+      "Category": "number",
+      "Language Affected": "Hindi",
+      "Description": "Number '4' changed to '34' in Hindi",
+      "Expected Value": "4",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-005",
+      "Category": "number",
+      "Language Affected": "Marathi",
+      "Description": "Number '200' removed from Marathi",
+      "Expected Value": "200",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-006",
+      "Category": "number",
+      "Language Affected": "Marathi",
+      "Description": "Number '200' changed to '150' in Marathi",
+      "Expected Value": "200",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-007",
+      "Category": "number",
+      "Language Affected": "Marathi",
+      "Description": "Number '4' removed from Marathi",
+      "Expected Value": "4",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-008",
+      "Category": "number",
+      "Language Affected": "Marathi",
+      "Description": "Number '4' changed to '9' in Marathi",
+      "Expected Value": "4",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-009",
+      "Category": "number",
+      "Language Affected": "English",
+      "Description": "Number '200' changed to '300' in English",
+      "Expected Value": "200",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NUM-010",
+      "Category": "number",
+      "Language Affected": "English",
+      "Description": "Number '4' removed from English",
+      "Expected Value": "4",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-001",
+      "Category": "date",
+      "Language Affected": "Hindi",
+      "Description": "Date removed from Hindi",
+      "Expected Value": "26 November 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-002",
+      "Category": "date",
+      "Language Affected": "Hindi",
+      "Description": "Day changed 15->16 in Hindi date",
+      "Expected Value": "26 November 2026",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-DATE-003",
+      "Category": "date",
+      "Language Affected": "Hindi",
+      "Description": "Month changed September->October in Hindi date",
+      "Expected Value": "26 November 2026",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-DATE-004",
+      "Category": "date",
+      "Language Affected": "Hindi",
+      "Description": "Year changed 2026->2027 in Hindi",
+      "Expected Value": "26 November 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-005",
+      "Category": "date",
+      "Language Affected": "Marathi",
+      "Description": "Date removed from Marathi",
+      "Expected Value": "26 November 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-006",
+      "Category": "date",
+      "Language Affected": "Marathi",
+      "Description": "Day changed 15->14 in Marathi date",
+      "Expected Value": "26 November 2026",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-DATE-007",
+      "Category": "date",
+      "Language Affected": "Marathi",
+      "Description": "Month changed September->October in Marathi date",
+      "Expected Value": "26 November 2026",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-DATE-008",
+      "Category": "date",
+      "Language Affected": "Marathi",
+      "Description": "Year changed 2026->2025 in Marathi",
+      "Expected Value": "26 November 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-DATE-009",
+      "Category": "date",
+      "Language Affected": "English",
+      "Description": "Day changed 15->20 in English date",
+      "Expected Value": "26 November 2026",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-DATE-010",
+      "Category": "date",
+      "Language Affected": "English",
+      "Description": "Year changed 2026->2024 in English",
+      "Expected Value": "26 November 2026",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NAME-001",
+      "Category": "name",
+      "Language Affected": "Hindi",
+      "Description": "Name removed from Hindi",
+      "Expected Value": "Lieutenant General Arjun Suresh Rao",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NAME-002",
+      "Category": "name",
+      "Language Affected": "Hindi",
+      "Description": "First name changed in Hindi",
+      "Expected Value": "Lieutenant General Arjun Suresh Rao",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-003",
+      "Category": "name",
+      "Language Affected": "Hindi",
+      "Description": "Last name changed in Hindi",
+      "Expected Value": "Lieutenant General Arjun Suresh Rao",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-004",
+      "Category": "name",
+      "Language Affected": "Hindi",
+      "Description": "Name replaced with different name in Hindi",
+      "Expected Value": "Lieutenant General Arjun Suresh Rao",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NAME-005",
+      "Category": "name",
+      "Language Affected": "Marathi",
+      "Description": "Name removed from Marathi",
+      "Expected Value": "Lieutenant General Arjun Suresh Rao",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    },
+    {
+      "ID": "SEED-NAME-006",
+      "Category": "name",
+      "Language Affected": "Marathi",
+      "Description": "First name changed in Marathi",
+      "Expected Value": "Lieutenant General Arjun Suresh Rao",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-007",
+      "Category": "name",
+      "Language Affected": "Marathi",
+      "Description": "Last name changed in Marathi",
+      "Expected Value": "Lieutenant General Arjun Suresh Rao",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-008",
+      "Category": "name",
+      "Language Affected": "Hindi",
+      "Description": "Honorific removed from Hindi name",
+      "Expected Value": "Lieutenant General Arjun Suresh Rao",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-009",
+      "Category": "name",
+      "Language Affected": "Marathi",
+      "Description": "Honorific removed from Marathi name",
+      "Expected Value": "Lieutenant General Arjun Suresh Rao",
+      "Expected Detection": true,
+      "Was Caught": false,
+      "Result": "FAIL"
+    },
+    {
+      "ID": "SEED-NAME-010",
+      "Category": "name",
+      "Language Affected": "Marathi",
+      "Description": "Name replaced with different name in Marathi",
+      "Expected Value": "Lieutenant General Arjun Suresh Rao",
+      "Expected Detection": true,
+      "Was Caught": true,
+      "Result": "PASS"
+    }
+  ]
+}

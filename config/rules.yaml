@@ -1,0 +1,88 @@
+rules:
+  - id: RULE-NUM-001
+    name: "Missing critical number"
+    category: number
+    severity: CRITICAL
+    description: "A critical number present in the reference version is absent in this language version."
+
+  - id: RULE-NUM-002
+    name: "Changed numeric value"
+    category: number
+    severity: CRITICAL
+    description: "A numeric value has been changed relative to the reference version."
+
+  - id: RULE-NUM-003
+    name: "Extra number inserted"
+    category: number
+    severity: WARNING
+    description: "An additional number appears in this version that is not in the reference."
+
+  - id: RULE-DATE-001
+    name: "Missing date"
+    category: date
+    severity: CRITICAL
+    description: "A date present in the reference version is absent in this language version."
+
+  - id: RULE-DATE-002
+    name: "Changed date"
+    category: date
+    severity: CRITICAL
+    description: "A date has been changed relative to the reference version."
+
+  - id: RULE-NAME-001
+    name: "Missing expected name"
+    category: name
+    severity: CRITICAL
+    description: "An expected person name is absent in this language version."
+
+  - id: RULE-NAME-002
+    name: "Possible name mismatch"
+    category: name
+    severity: WARNING
+    description: "A name appears to differ across versions. Confidence below strong threshold; manual review recommended."
+
+  - id: RULE-LOC-001
+    name: "Missing expected location"
+    category: location
+    severity: CRITICAL
+    description: "An expected location present in the reference version is absent in this language version."
+
+  - id: RULE-LOC-002
+    name: "Possible location mismatch"
+    category: location
+    severity: WARNING
+    description: "A location appears to differ across versions. Confidence below strong threshold; manual review recommended."
+
+# ── OPSEC Criticality Rules ──────────────────────────────────────────────────
+# Used by core/criticality.py to automatically tag extracted facts.
+criticality_rules:
+  - pattern: "troop|personnel|soldier|jawan|battalion|regiment|cadets?"
+    criticality: CRITICAL
+    opsec_tag: TROOP_STRENGTH
+    description: "Troop numbers and military personnel counts"
+
+  - pattern: "station|cantonment|base|depot|military\\s+hospital"
+    criticality: HIGH
+    opsec_tag: LOCATION_STRATEGIC
+    description: "Strategic military installations"
+
+  - pattern: "exercise|operation|review|briefing|deployment"
+    criticality: HIGH
+    opsec_tag: OPERATIONAL_TIMING
+    description: "Operational activities and timing"
+
+  - pattern: "general|colonel|brigadier|commander|commandant|officer"
+    criticality: CRITICAL
+    opsec_tag: PERSONNEL_IDENTITY
+    description: "Senior military personnel identities"
+
+  - pattern: "family|families|civilian|community|awareness|health|medical"
+    criticality: MEDIUM
+    opsec_tag: CIVIC_ACTIVITY
+    description: "Civic and community engagement activities"
+
+  - pattern: "percent|improvement|efficiency|performance"
+    criticality: MEDIUM
+    opsec_tag: PERFORMANCE_DATA
+    description: "Performance metrics and assessments"
+

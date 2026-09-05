@@ -1,0 +1,94 @@
+{
+  "entities": [
+    {
+      "canonical": "General Rajesh Kumar Verma",
+      "normalized": "general rajesh kumar verma",
+      "aliases": [
+        "General Rajesh Kumar Verma",
+        "Gen. Rajesh Kumar Verma",
+        "Gen Rajesh Kumar Verma",
+        "Rajesh Kumar Verma",
+        "जनरल राजेश कुमार वर्मा",
+        "जनरल राजेश वर्मा",
+        "राजेश कुमार वर्मा"
+      ]
+    },
+    {
+      "canonical": "Dr. Priya Suresh Mehta",
+      "normalized": "dr priya suresh mehta",
+      "aliases": [
+        "Dr. Priya Suresh Mehta",
+        "Dr Priya Suresh Mehta",
+        "Dr. Priya Mehta",
+        "Priya Suresh Mehta",
+        "डॉ. प्रिया सुरेश मेहता",
+        "डॉ प्रिया सुरेश मेहता",
+        "डॉ. प्रिया मेहता",
+        "प्रिया सुरेश मेहता",
+        "डॉ. प्रिया सुरेश मेहता",
+        "डॉ. प्रिया मेहता"
+      ]
+    },
+    {
+      "canonical": "Brigadier Aditya Kumar Nair",
+      "normalized": "brigadier aditya kumar nair",
+      "aliases": [
+        "Brigadier Aditya Kumar Nair",
+        "Brig. Aditya Kumar Nair",
+        "Brig Aditya Nair",
+        "Aditya Kumar Nair",
+        "ब्रिगेडियर आदित्य कुमार नायर",
+        "ब्रिगेडियर आदित्य नायर",
+        "आदित्य कुमार नायर",
+        "ब्रिगेडियर आदित्य कुमार नायर"
+      ]
+    },
+    {
+      "canonical": "Colonel Meera Shankar Singh",
+      "normalized": "colonel meera shankar singh",
+      "aliases": [
+        "Colonel Meera Shankar Singh",
+        "Col. Meera Shankar Singh",
+        "Col Meera Singh",
+        "Meera Shankar Singh",
+        "कर्नल मीरा शंकर सिंह",
+        "कर्नल मीरा सिंह",
+        "मीरा शंकर सिंह"
+      ]
+    },
+    {
+      "canonical": "Lieutenant General Arjun Suresh Rao",
+      "normalized": "lieutenant general arjun suresh rao",
+      "aliases": [
+        "Lieutenant General Arjun Suresh Rao",
+        "Lt. Gen. Arjun Suresh Rao",
+        "Lt Gen Arjun Rao",
+        "Arjun Suresh Rao",
+        "लेफ्टिनेंट जनरल अर्जुन सुरेश राव",
+        "लेफ्टनंट जनरल अर्जुन सुरेश राव",
+        "लेफ्टिनेंट जनरल अर्जुन राव",
+        "अर्जुन सुरेश राव",
+        "लेफ्टिनेंट जनरल अर्जुन सुरेश राव"
+      ]
+    }
+  ],
+  "honorifics": {
+    "dr.": "dr", "dr": "dr",
+    "डॉ.": "dr", "डॉ": "dr",
+    "gen.": "gen", "gen": "gen", "general": "gen",
+    "जनरल": "gen", "सेनापती": "gen",
+    "brig.": "brig", "brig": "brig", "brigadier": "brig",
+    "ब्रिगेडियर": "brig",
+    "col.": "col", "col": "col", "colonel": "col",
+    "कर्नल": "col",
+    "lt.": "lt", "lt": "lt", "lieutenant": "lt",
+    "लेफ्टिनेंट": "lt", "लेफ्टनंट": "lt",
+    "lt. gen.": "lt_gen", "lt gen": "lt_gen",
+    "maj.": "maj", "maj": "maj", "major": "maj",
+    "मेजर": "maj",
+    "capt.": "capt", "capt": "capt", "captain": "capt",
+    "कैप्टन": "capt", "कॅप्टन": "capt",
+    "mr.": "mr", "mr": "mr", "श्री": "mr",
+    "mrs.": "mrs", "mrs": "mrs", "श्रीमती": "mrs"
+  }
+}
