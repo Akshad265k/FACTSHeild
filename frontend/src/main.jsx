@@ -3,16 +3,19 @@ import { createRoot } from 'react-dom/client'
 import './styles.css'
 
 /* ── Safe fetch helper ──────────────────────────────────────────────────────── */
+const API_BASE = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '')
+const toApiUrl = (p) => (p.startsWith('http') ? p : `${API_BASE}${p}`)
+
 const request = async (path, options = {}) => {
   let r
   try {
-    r = await fetch(path, {
+    r = await fetch(toApiUrl(path), {
       headers: { 'Content-Type': 'application/json' },
       ...options,
     })
   } catch (networkErr) {
     throw new Error(
-      'Could not reach the FACTSHIELD backend — is the Python API running on port 8000?'
+      'Could not reach the FACTSHIELD backend — is the Python API running?'
     )
   }
 
@@ -111,7 +114,7 @@ function Analyse({ done }) {
     if (!f) return
     const form = new FormData()
     form.append('file', f)
-    fetch('/api/documents/extract', { method: 'POST', body: form })
+    fetch(toApiUrl('/api/documents/extract'), { method: 'POST', body: form })
       .then(async (r) => {
         const text = await r.text()
         if (!text) throw new Error('Empty response from document extraction.')
