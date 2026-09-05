@@ -10,6 +10,8 @@ from pathlib import Path
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from core.comparison import compare_versions
@@ -23,6 +25,7 @@ from ingestion.docx_loader import load_docx
 
 ROOT = Path(__file__).resolve().parent.parent
 SAMPLES = ROOT / "data" / "sample_releases"
+DIST_DIR = ROOT / "frontend" / "dist"
 
 app = FastAPI(title="FACTSHIELD API", version="2.0")
 app.add_middleware(
@@ -33,9 +36,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+if (DIST_DIR / "assets").is_dir():
+    app.mount("/assets", StaticFiles(directory=DIST_DIR / "assets"), name="assets")
+
 
 @app.get("/")
-def root() -> dict:
+def root():
+    index_file = DIST_DIR / "index.html"
+    if index_file.is_file():
+        return FileResponse(index_file)
     return {
         "status": "ok",
         "message": "FACTSHIELD API is running",
